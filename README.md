@@ -20,7 +20,6 @@
 -   [Status](#status)
 -   [What's included](#whats-included) - [Planned Features](#planned-features)
 -	[Contributors](#contributers)
--   [Thanks](#thanks)
 -   [Copyright and license](#copyright-and-license)
 
 ## Quick start
@@ -123,10 +122,6 @@ advent-of-code/
 ## Contributers
 
 -   [Lofty Brambles](https://github.com/Lofty-Brambles/)
-
-## Thanks
-
-Some Text
 
 ## Copyright and license
 
