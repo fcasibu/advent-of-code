@@ -1,0 +1,21 @@
+import { readFileSync } from "fs";
+import solution from "./solution-#{year}-#{day}";
+
+const YEAR = +"#{year}";
+const DAY = +"#{day}";
+const DATAPATH = "#{datapath}";
+
+const data = readFileSync(DATAPATH, "utf-8");
+
+console.log(`
+---------------------
+ • Day - ${DAY}
+ • Year - ${YEAR}
+---------------------
+
+=-=-=-=-=-=-=-=-=-=-=
+    🎈 | Solution
+=-=-=-=-=-=-=-=-=-=-=
+
+${solution(data)}
+`);

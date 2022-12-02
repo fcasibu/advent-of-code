@@ -1,0 +1,33 @@
+{
+	"name": "advent-of-code-manager",
+	"version": "1.0.0",
+	"description": "Advent of code maybeeeee",
+	"scripts": {
+		"help": "ts-node ./lib/main.ts help",
+		"login": "ts-node ./lib/main.ts login",
+		"fetch": "ts-node ./lib/main.ts fetch"
+	},
+	"keywords": [
+		"aoc",
+		"runner",
+		"quick-script"
+	],
+	"author": "Lofty Brambles",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/mkdirp": "^1.0.2",
+		"@types/node": "^18.11.10",
+		"@types/write-file-atomic": "^4.0.0",
+		"coffeescript": "^2.7.0",
+		"prettier": "^2.8.0",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.3"
+	},
+	"dependencies": {
+		"cross-fetch": "^3.1.5",
+		"enquirer": "^2.3.6",
+		"mkdirp": "^1.0.4",
+		"puppeteer-core": "^19.3.0",
+		"write-file-atomic": "^5.0.0"
+	}
+}

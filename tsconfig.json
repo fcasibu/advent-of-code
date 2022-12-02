@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["ESNext"],
+		"module": "CommonJS",
+		"moduleResolution": "node",
+
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./src/*"],
+			"#tests/*": ["./tests/*"],
+			"#public/*": ["./public/*"]
+		},
+		"typeRoots": ["./node_modules/@types"],
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"strict": true /* Enable all strict type-checking options. */,
+		"useUnknownInCatchVariables": true,
+		"skipLibCheck": false
+	},
+	"include": [
+		"**/*.ts",
+		"e.js",
+		"lib/templates/runner.ts.dat",
+		"lib/templates/solution.ts.dat"
+	],
+	"exclude": ["./node_modules/"]
+}

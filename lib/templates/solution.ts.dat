@@ -1,0 +1,8 @@
+/**
+ * • Year - ${YEAR}
+ * • Day  - ${DAY}
+ */
+
+const solution = (data: string) => {};
+
+export default solution;
