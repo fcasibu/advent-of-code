@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Lofty-Brambles/advent-of-code">
-    <img src="https://github.com/Lofty-Brambles/advent-of-code/blob/main/lib/images/logo.png" alt="Logo" width=72 height=72>
+    <img src="https://raw.githubusercontent.com/Lofty-Brambles/advent-of-code/main/.github/images/logo.png" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">Advent of Code - TS/JS manager!</h3>
@@ -19,7 +19,7 @@
 -   [Quick start](#quick-start)
 -   [Status](#status)
 -   [What's included](#whats-included) - [Planned Features](#planned-features)
--	[Contributors](#contributers)
+-   [Contributors](#contributers)
 -   [Copyright and license](#copyright-and-license)
 
 ## Quick start
@@ -89,11 +89,12 @@ A project is usually like this:
 
 ```text
 advent-of-code/
+├── .github/
+│   └── images/
+│       └── logo.png
 ├── config/ [generated]
 │   └── sessionToken/ [generated]
 ├── lib/
-│   ├── images/
-│   │   └── logo.png
 │   ├── scripts/
 │   │   ├── fetch.ts
 │   │   ├── genFile.ts
