@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Lofty-Brambles/advent-of-code">
-    <img src="./lib/images/logo.png" alt="Logo" width=72 height=72>
+    <img src="https://github.com/Lofty-Brambles/advent-of-code/blob/main/lib/images/logo.png" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">Advent of Code - TS/JS manager!</h3>
@@ -19,11 +19,9 @@
 -   [Quick start](#quick-start)
 -   [Status](#status)
 -   [What's included](#whats-included) - [Planned Features](#planned-features)
-<!-- -   [Bugs and feature requests](#bugs-and-feature-requests)
--   [Contributing](#contributing)
--   [Creators](#creators) -->
+-	[Contributors](#contributers)
 -   [Thanks](#thanks)
-<!-- -   [Copyright and license](#copyright-and-license) -->
+-   [Copyright and license](#copyright-and-license)
 
 ## Quick start
 
@@ -122,23 +120,9 @@ advent-of-code/
 └── tsconfig.json
 ```
 
-<!-- ## Bugs and feature requests
+## Contributers
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
-
-## Contributing
-
-Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-Moreover, all HTML and CSS should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Main author](https://github.com/usernamemainauthor).
-
-Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
-
-## Creators
-
-**Creator 1**
-
--   <https://github.com/usernamecreator1> -->
+-   [Lofty Brambles](https://github.com/Lofty-Brambles/)
 
 ## Thanks
 
@@ -146,6 +130,7 @@ Some Text
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+Code and documentation copyright 2022 - Lofty Brambles and contributors.
+Code released under the [MIT License](https://github.com/Lofty-Brambles/advent-of-code/blob/master/LICENSE).
 
 Enjoy :metal:
