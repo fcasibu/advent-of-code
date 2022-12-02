@@ -5,7 +5,8 @@
 	"scripts": {
 		"help": "ts-node ./lib/main.ts help",
 		"login": "ts-node ./lib/main.ts login",
-		"fetch": "ts-node ./lib/main.ts fetch"
+		"fetch": "ts-node ./lib/main.ts fetch",
+		"exec": "ts-node ./lib/main.ts exec"
 	},
 	"keywords": [
 		"aoc",

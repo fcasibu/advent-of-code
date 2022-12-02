@@ -21,11 +21,6 @@
 		"useUnknownInCatchVariables": true,
 		"skipLibCheck": false
 	},
-	"include": [
-		"**/*.ts",
-		"e.js",
-		"lib/templates/runner.ts.dat",
-		"lib/templates/solution.ts.dat"
-	],
+	"include": ["**/*.ts"],
 	"exclude": ["./node_modules/"]
 }

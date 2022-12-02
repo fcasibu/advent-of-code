@@ -33,12 +33,6 @@ export const genRunner = async ({ day, year, fetchAll }: Props) => {
 	const replacements = {
 		"#{year}": `${year}`,
 		"#{day}": `${day}`,
-		"#{datapath}": join(
-			root(),
-			`${year}`,
-			`${day}`.padStart(2, "0"),
-			"data.txt"
-		),
 	};
 
 	await mkdirp(dirname(route));

@@ -3,6 +3,7 @@
 import help from "./scripts/help";
 import login from "./scripts/login";
 import fetch from "./scripts/fetch";
+import exec from "./scripts/exec";
 
 const script = async () => {
 	switch (process.argv[2]) {
@@ -14,6 +15,9 @@ const script = async () => {
 			break;
 		case "fetch":
 			await fetch();
+			break;
+		case "exec":
+			exec();
 			break;
 	}
 };
