@@ -136,10 +136,31 @@ const fetch = async () => {
 		for (let i = 1; i <= NUMBER_OF_DAYS; i++) {
 			const done = await fetchDay(i, year);
 
-			if (!config.noRunner && !done)
-				await genRunner({ day: i, year, fetchAll: config.fetchAll });
-			if (!config.noSolution && !done)
-				await genFile({ day: i, year, fetchAll: config.fetchAll });
+			if (!config.noRunner && !done) {
+				const route = join(
+					root(),
+					`${year}`,
+					`${i}`.padStart(2, "0"),
+					"runner.ts"
+				);
+				if (!existsSync(route))
+					await genRunner({
+						day: i,
+						year,
+						fetchAll: config.fetchAll,
+					});
+			}
+
+			if (!config.noSolution && !done) {
+				const route = join(
+					root(),
+					`${year}`,
+					`${i}`.padStart(2, "0"),
+					`solution-${year}-${i}.ts`
+				);
+				if (!existsSync(route))
+					await genFile({ day: i, year, fetchAll: config.fetchAll });
+			}
 
 			if (done) {
 				console.log(
