@@ -23,9 +23,8 @@ class Counter {
 
 	addX(V: number) {
 		this.noop();
-		this.cycles += 1;
+		this.noop();
 		this.X += V;
-		this.tally();
 	}
 }
 
@@ -41,11 +40,51 @@ const question1 = (data: string) => {
 	return counter.strengthStore;
 };
 
-const question2 = (data: string) => {};
+const [HEIGHT, WIDTH] = [6, 40];
+
+class CRT {
+	public screen = Array.from({ length: HEIGHT }, () =>
+		Array.from({ length: WIDTH }, () => ".")
+	);
+	constructor() {}
+
+	findPosition(X: number, col: number) {
+		return X - 1 <= col && X + 1 >= col ? "█" : " ";
+	}
+
+	draw(cycle: number, X: number) {
+		const col = cycle % WIDTH;
+		const row = Math.floor(cycle / WIDTH);
+		this.screen[row][col] = this.findPosition(X, col).repeat(2);
+	}
+}
+
+const question2 = (data: string) => {
+	const counter = new Counter(0, 1);
+	const crt = new CRT();
+
+	const execCycle = () => {
+		crt.draw(counter.cycles, counter.X);
+		counter.noop();
+	};
+
+	data.split("\n").forEach(line => {
+		const [_, val] = line.split(" ");
+		if (val === undefined) {
+			execCycle();
+		} else {
+			execCycle();
+			execCycle();
+			counter.X += +val;
+		}
+	});
+
+	console.log(crt.screen);
+};
 
 const solution = (data: string) => {
-	return question1(data);
-	// return question2(data);
+	// return question1(data);
+	return question2(data);
 };
 
 export default solution;
