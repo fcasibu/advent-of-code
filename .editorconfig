@@ -1,0 +1,4 @@
+root = true
+
+[*]
+tab_size = 4
