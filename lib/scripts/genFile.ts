@@ -31,8 +31,8 @@ export const genFile = async ({ day, year, fetchAll }: Props) => {
 	);
 
 	const replacements = {
-		"#{year}": `${year}`,
-		"#{day}": `${day}`,
+		"#{YEAR}": `${year}`,
+		"#{DAY}": `${day}`,
 	};
 
 	await mkdirp(dirname(route));
