@@ -1,6 +1,6 @@
 /**
- * • Year - ${YEAR}
- * • Day  - ${DAY}
+ * • Year - #{YEAR}
+ * • Day  - #{DAY}
  */
 
 const question1 = (data: string) => {};
