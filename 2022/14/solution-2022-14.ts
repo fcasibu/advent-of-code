@@ -44,9 +44,6 @@ const parse = (data: string) =>
 			{ map: new Map<number, Hash>(), max: 0 }
 		);
 
-const count = (caveCoords: Map<number, Hash>) =>
-	[...caveCoords].filter(([_, fillerType]) => fillerType === "o").length;
-
 const update = (
 	caveCoords: Map<number, Hash>,
 	pos: number,
@@ -64,15 +61,8 @@ const update = (
 	return next || SOURCE;
 };
 
-// export const part2 = input => {
-// 	const [cave, max] = parse(input);
-// 	const newMax = (max & 0xffff0000) + (2 << 16);
-// 	let pos = SOURCE;
-// 	while (!cave.has(SOURCE)) {
-// 		pos = update(cave, pos, p => p <= newMax);
-// 	}
-// 	return count(cave);
-// };
+const count = (caveCoords: Map<number, Hash>) =>
+	[...caveCoords].filter(([_, fillerType]) => fillerType === "o").length;
 
 const question1 = (data: string) => {
 	const { map, max } = parse(data);
