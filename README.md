@@ -14,8 +14,6 @@
   </p>
 </p>
 
-<p style="border: red 1px solid;">test</p>
-
 ## Table of contents
 
 -   [Quick start](#quick-start)
